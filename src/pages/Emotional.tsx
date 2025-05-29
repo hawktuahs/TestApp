@@ -13,11 +13,6 @@ import {
   Divider,
   Rating,
 } from '@mui/material';
-import {
-  SentimentSatisfied as HappyIcon,
-  SentimentNeutral as NeutralIcon,
-  SentimentDissatisfied as SadIcon,
-} from '@mui/icons-material';
 
 interface MoodEntry {
   id: number;
