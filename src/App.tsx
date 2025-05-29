@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { theme } from './theme';
 import Layout from './components/Layout';
@@ -22,6 +22,7 @@ function App() {
             <Route path="/health" element={<Health />} />
             <Route path="/emotional" element={<Emotional />} />
             <Route path="/finance" element={<Finance />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Layout>
       </Router>
